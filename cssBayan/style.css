@@ -18,3 +18,10 @@ html {
 h1 {
     text-align: center;
 }
+
+.mem_img {
+    display: block;
+    margin: auto;
+    width: 60%;
+
+}
