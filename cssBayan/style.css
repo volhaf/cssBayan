@@ -13,10 +13,7 @@ html {
 .conteiner:not(:hover) .invisible {
     display: none;
    }
-   
-.minus {
-    display: none;
-}
+
 .header {
     padding: 3rem;
 }
@@ -52,6 +49,9 @@ div > span{
 input {
     display: none;
 }
+.minus {
+    display: none;
+}
 
 input ~ img {
     display: block;
@@ -67,12 +67,12 @@ label:hover .img_mem {
 }
 
 label:hover .plus,
-input:checked ~ .header_text .plus {
+input:checked ~ .plus {
     display: none;
 }
    
 label:hover .minus,
-input:checked ~ .header_text .minus {
+input:checked ~ .minus {
     display: block;
 }
 
