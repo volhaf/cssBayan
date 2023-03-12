@@ -10,8 +10,15 @@ html {
     max-width: 60%;
     margin: auto;
 }
+.conteiner:not(:hover) .invisible {
+    display: none;
+   }
+   
+.minus {
+    display: none;
+}
 .header {
-    padding: 50px;
+    padding: 3rem;
 }
 h1 {
     text-align: center;
@@ -20,25 +27,21 @@ h1 {
 .header_text {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 1.5rem;
     border: 2px solid rgb(129, 94, 83); 
     background-color: rgb(193, 155, 142);
     cursor: pointer;
 }
 .accordion {
     width: 100%;
-    padding-top: 20px;
+    padding-top: 1.5rem;
 }
-
-.conteiner:not(:hover) .header_text .new {
-    display: none;
-   }
 
 img {
     display: block;
     margin: auto;
     width: 60%;
-    padding-top: 20px;
+    padding-top: 1.5rem;
     transition: all ease-out 0.5s;
 
 }
@@ -72,18 +75,16 @@ label:hover .minus,
 input:checked ~ .header_text .minus {
     display: block;
 }
-.minus {
-    display: none;
-}
+
 footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 40px
+    padding: 2.5rem
 }
 .footer-data{
     display: flex;
-    gap: 20px;
+    gap: 1.5rem;
 }
 .footer-data > span{
     font-size: 1rem;
