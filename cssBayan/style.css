@@ -4,7 +4,6 @@ html {
    body {
     margin: 0;
     padding: 0;
-    /* min-height: 100vh; */
     background-color:bisque; 
 }
 .conteiner {
@@ -31,11 +30,17 @@ h1 {
     padding-top: 20px;
 }
 
+.conteiner:not(:hover) .header_text .new {
+    display: none;
+   }
+
 img {
     display: block;
     margin: auto;
     width: 60%;
     padding-top: 20px;
+    transition: all ease-out 0.5s;
+
 }
 div > span{
     font-size: 2rem;
@@ -45,54 +50,31 @@ input {
     display: none;
 }
 
-/* input ~ img {
-    display: none;
-} 
-
-
-input:checked ~ img,
-label:hover img {
-    display: block;
-    margin: 0 auto;
-}  */
-
-
-
 input ~ img {
     display: block;
-    margin: 0 auto;
     width: 0;
-    transition: all ease-out 0.5s;
-   }
-
-   input:checked ~ img,
-   label:hover .img_mem {
-    display: block;
     margin: 0 auto;
-    width: 50%;
-   }
-   
-   label:hover .minus,
-   input:checked ~ .header_text .minus {
+}
+
+input:checked ~ img,
+label:hover .img_mem {
     display: block;
-   }
-   
-   label:hover .plus,
-   input:checked ~ .header_text .plus {
+    width: 50%;
+    margin: 0 auto;
+}
+
+label:hover .plus,
+input:checked ~ .header_text .plus {
     display: none;
-   }
-
-   .plus,
-   .minus {
-    width: 2em;
-   }
+}
    
-   .minus {
+label:hover .minus,
+input:checked ~ .header_text .minus {
+    display: block;
+}
+.minus {
     display: none;
-   }
-
-
-
+}
 footer {
     display: flex;
     align-items: center;
