@@ -23,7 +23,8 @@ h1 {
     justify-content: space-between;
     padding: 20px;
     border: 2px solid rgb(129, 94, 83); 
-    background-color: rgb(193, 155, 142); ;
+    background-color: rgb(193, 155, 142);
+    cursor: pointer;
 }
 .accordion {
     width: 100%;
@@ -44,15 +45,54 @@ input {
     display: none;
 }
 
-input ~ img {
+/* input ~ img {
     display: none;
-}
+} 
+
 
 input:checked ~ img,
 label:hover img {
     display: block;
     margin: 0 auto;
-}
+}  */
+
+
+
+input ~ img {
+    display: block;
+    margin: 0 auto;
+    width: 0;
+    transition: all ease-out 0.5s;
+   }
+
+   input:checked ~ img,
+   label:hover .img_mem {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+   }
+   
+   label:hover .minus,
+   input:checked ~ .header_text .minus {
+    display: block;
+   }
+   
+   label:hover .plus,
+   input:checked ~ .header_text .plus {
+    display: none;
+   }
+
+   .plus,
+   .minus {
+    width: 2em;
+   }
+   
+   .minus {
+    display: none;
+   }
+
+
+
 footer {
     display: flex;
     align-items: center;
