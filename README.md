@@ -1,2 +1,1 @@
-# cssBayan
-RS School learning project
+https://volhaf.github.io/cssBayan/cssBayan/index.html
