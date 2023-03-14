@@ -1,0 +1,170 @@
+html {
+    box-sizing: border-box;
+}
+   body {
+    margin: 0;
+    padding: 0;
+    background-color:bisque; 
+}
+.conteiner {
+    max-width: 60%;
+    margin: auto;
+}
+.conteiner:not(:hover) .invisible {
+    display: none;
+   }
+
+.header {
+    padding: 3rem;
+}
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.header_text {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    border: 2px solid rgb(129, 94, 83); 
+    background-color: rgb(193, 155, 142);
+    cursor: pointer;
+}
+.accordion {
+    width: 100%;
+    padding-top: 1.5rem;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 60%;
+    padding-top: 1.5rem;
+    transition: all ease-out 0.8s;
+
+}
+div > span{
+    font-size: 2rem;
+}
+
+input {
+    display: none;
+}
+.minus {
+    display: none;
+}
+
+input ~ img {
+    display: block;
+    width: 0;
+    margin: 0 auto;
+}
+
+input:checked ~ img,
+label:hover .img_mem {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+label:hover .plus,
+input:checked ~ .plus {
+    display: none;
+}
+   
+label:hover .minus,
+input:checked ~ .minus {
+    display: block;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem
+}
+.footer-data{
+    display: flex;
+    gap: 1.5rem;
+}
+.footer-data > span{
+    font-size: 1rem;
+}
+.link {
+    text-decoration: none;
+    color: #010201;
+    font-size: 1rem;
+
+}
+
+@media (max-width: 1179px){
+
+    .header_text {
+        cursor: none;
+        padding: 1rem;
+    }
+ 
+    div > span {
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 700px){
+    .header {
+        padding: 2rem;
+    }
+    .accordion {
+        padding-top: 1rem; 
+    }
+
+    div > span{
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+    footer {
+    padding: 1rem
+    }
+     .footer-data{
+        gap: 1rem;
+    }
+    .footer-data > span, .link {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 380px){
+    .header {
+        padding: 1.5rem;
+    }
+    .conteiner {
+        max-width: 80%;
+    }
+    .accordion {
+        padding-top: 0.5rem; 
+    }
+    .header_text {
+        padding: 0.5rem;
+    }
+
+    div > span{
+        font-size: 0.5rem;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+    .footer-data{
+        gap: 0.5rem;
+    }
+    .footer-data > span, .link{
+        font-size: 0.4rem;
+    }
+
+} 
